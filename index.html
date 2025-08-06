@@ -13,15 +13,21 @@
 
 <body class="bg-gray-950 text-gray-100 font-sans">
     <header class="sticky top-0 z-50 bg-gray-950/95 backdrop-blur-sm border-b border-gray-800">
-        <nav class="max-w-6xl mx-auto dkslaoeyhnmj lg:px-12 py-6 flex layhetgsjdcb vlaoethsnkma">
-            <a href="index.html" class="flex layhetgsjdcb gap-3">
+        <nav class="max-w-6xl mx-auto dkslaoeyhnmj lg:px-12 py-6 flex items-center place-content-between ">
+            <a href="index.html" class="flex items-center gap-3">
                 <i class="fas fa-code text-green-400 text-2xl led-glow"></i>
                 <span class="text-xl font-bold text-white font-code">sanjay nakum</span>
             </a>
-            <div class="hidden md:flex layhetgsjdcb gap-10">
+            <div class="hidden md:flex items-center gap-10">
                 <a href="#about"
                     class="text-gray-300 hover:text-green-400 [&.active]:text-green-400 [&.active>span]:w-full transition-colors font-medium relative group">
                     About
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-400 transition-all group-hover:w-full"></span>
+                </a>
+                <a href="#skill"
+                    class="text-gray-300 hover:text-green-400 [&.active]:text-green-400 [&.active>span]:w-full transition-colors font-medium relative group">
+                    Skills
                     <span
                         class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-400 transition-all group-hover:w-full"></span>
                 </a>
@@ -31,18 +37,7 @@
                     <span
                         class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-400 transition-all group-hover:w-full"></span>
                 </a>
-                <a href="#blog"
-                    class="text-gray-300 hover:text-green-400 [&.active]:text-green-400 [&.active>span]:w-full transition-colors font-medium relative group">
-                    Blogs
-                    <span
-                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-400 transition-all group-hover:w-full"></span>
-                </a>
-                <a href="#reviews"
-                    class="text-gray-300 hover:text-green-400 [&.active]:text-green-400 [&.active>span]:w-full transition-colors font-medium relative group">
-                    Reviews
-                    <span
-                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-400 transition-all group-hover:w-full"></span>
-                </a>
+
                 <a href="#contact"
                     class="text-gray-300 hover:text-green-400 [&.active]:text-green-400 [&.active>span]:w-full transition-colors font-medium relative group">
                     Contact
@@ -64,10 +59,6 @@
                         class="text-gray-300 hover:text-green-400 [&.active]:text-green-400 transition-colors font-medium">About</a>
                     <a href="#projects"
                         class="text-gray-300 hover:text-green-400 [&.active]:text-green-400 transition-colors font-medium">Projects</a>
-                    <a href="#blog"
-                        class="text-gray-300 hover:text-green-400 [&.active]:text-green-400 transition-colors font-medium">Blogs</a>
-                    <a href="#reviews"
-                        class="text-gray-300 hover:text-green-400 [&.active]:text-green-400 transition-colors font-medium">Reviews</a>
                     <a href="#contact"
                         class="text-gray-300 hover:text-green-400 [&.active]:text-green-400 transition-colors font-medium">Contact</a>
                 </div>
@@ -77,11 +68,11 @@
 
     <main>
         <!-- Hero -->
-        <section id="hero" class="relative xl:min-h-screen relative mklausjenrhtm pt-20 pb-16">
+        <section id="hero" class="relative xl:min-h-screen relative overflow-hidden pt-20 pb-16">
             <div class="absolute inset-0 bg-hero opacity-[.03]"></div>
             <!-- Content -->
             <div class="max-w-6xl mx-auto dkslaoeyhnmj lg:px-12 relative z-10">
-                <div class="flex ioajsklehsnm layhetgsjdcb gap-8 xl:gap-12">
+                <div class="flex flex-col items-center gap-8 xl:gap-12">
                     <!-- Left Column: Developer Info -->
                     <div class="w-full text-center space-y-6 xl:pt-8" x-intersect:enter="isHeaderVisible = true"
                         x-intersect:leave="isHeaderVisible = false">
@@ -97,13 +88,13 @@
                             Welcome to my personal dev workspace where ideas come to life.
                         </p>
 
-                        <div class="flex flex-wrap yhansklopals spoathnmkles py-2 gap-10">
+                        <div class="flex flex-wrap justify-center spoathnmkles py-2 gap-10">
                             <a href="#projects"
-                                class="maksueyropls py-3 bg-green-500 hover:bg-green-600 text-gray-900 font-bold rounded-lg transition-all flex layhetgsjdcb gap-2 px-3">
+                                class="maksueyropls py-3 bg-green-500 hover:bg-green-600 text-gray-900 font-bold rounded-lg transition-all flex items-center gap-2 px-3">
                                 <i class="fas fa-code"></i> View Projects
                             </a>
                             <a href="#contact"
-                                class="maksueyropls py-3 bg-transparent hover:bg-gray-800 text-green-400 border border-green-400 font-bold rounded-lg transition-all flex layhetgsjdcb gap-2 px-3">
+                                class="maksueyropls py-3 bg-transparent hover:bg-gray-800 text-green-400 border border-green-400 font-bold rounded-lg transition-all flex items-center gap-2 px-3">
                                 <i class="fas fa-envelope"></i> Contact Me
                             </a>
                         </div>
@@ -118,18 +109,18 @@
                             </div>
 
                             <div
-                                class="absolute top-0 left-1/2 w-4/5 transform -translate-x-1/2 aspect-video bg-black rounded-lg border border-gray-600 shadow-lg flex ioajsklehsnm mb-24">
+                                class="absolute top-0 left-1/2 w-4/5 transform -translate-x-1/2 aspect-video bg-black rounded-lg border border-gray-600 shadow-lg flex flex-col mb-24">
                                 <div
                                     class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full w-1/2 h-4 bg-gray-700 rounded-b-sm">
                                 </div>
                                 <div class="flex-1 p-4 bg-gray-700 relative">
                                     <div
-                                        class="absolute inset-2 bg-black rounded border border-gray-700 flex ioajsklehsnm mklausjenrhtm">
-                                        <div class="bg-gray-800 p-1 flex layhetgsjdcb gap-1">
+                                        class="absolute inset-2 bg-black rounded border border-gray-700 flex flex-col overflow-hidden">
+                                        <div class="bg-gray-800 p-1 flex items-center gap-1">
                                             <div class="flex gap-1 ml-1">
-                                                <div class="w-2 h-2 bg-red-500 boalstehwqbj"></div>
-                                                <div class="w-2 h-2 bg-yellow-500 boalstehwqbj"></div>
-                                                <div class="w-2 h-2 bg-green-500 boalstehwqbj"></div>
+                                                <div class="w-2 h-2 bg-red-500 border-1"></div>
+                                                <div class="w-2 h-2 bg-yellow-500 border-1"></div>
+                                                <div class="w-2 h-2 bg-green-500 border-1"></div>
                                             </div>
                                             <div class="text-[10px] sm:text-xs text-gray-400 mx-auto font-code">
                                                 Sanjay_Nakum</div>
@@ -155,12 +146,12 @@
                                 <div class="absolute bottom-2 sm:bottom-7 w-full h-4 bg-gray-700 right-0 rounded-b-lg">
                                 </div>
                                 <div
-                                    class="absolute bottom-[calc(25%-1px)] w-full aspect-video bg-gray-700 border border-gray-700 rounded-t-lg mklausjenrhtm flex ioajsklehsnm origin-bottom px-1">
-                                    <div class="h-1 bg-gray-700 flex layhetgsjdcb yhansklopals">
-                                        <div class="w-1 h-1 bg-gray-500 boalstehwqbj"></div>
+                                    class="absolute bottom-[calc(25%-1px)] w-full aspect-video bg-gray-700 border border-gray-700 rounded-t-lg overflow-hidden flex flex-col origin-bottom px-1">
+                                    <div class="h-1 bg-gray-700 flex items-center justify-center">
+                                        <div class="w-1 h-1 bg-gray-500 border-1"></div>
                                     </div>
                                     <div class="flex-1 bg-black flex">
-                                        <div class="w-1/6 bg-gray-800 flex ioajsklehsnm layhetgsjdcb py-1 gap-1">
+                                        <div class="w-1/6 bg-gray-800 flex flex-col items-center py-1 gap-1">
                                             <div class="w-3 h-3 bg-gray-700 rounded"></div>
                                             <div class="w-3 h-3 bg-gray-700 rounded"></div>
                                             <div class="w-3 h-3 bg-green-700 rounded"></div>
@@ -223,16 +214,16 @@
                                         class="absolute inset-1 rounded-lg bg-gradient-to-b from-amber-700 to-amber-900">
                                     </div>
                                 </div>
-                                <div class="absolute w-6 h-1 bg-white/20 boalstehwqbj left-3 top-3"></div>
+                                <div class="absolute w-6 h-1 bg-white/20 border-1 left-3 top-3"></div>
                                 <!-- Steam Elements -->
                                 <div
-                                    class="absolute w-1.5 h-4 bg-white bg-opacity-30 boalstehwqbj left-4 -top-2 steam steam1">
+                                    class="absolute w-1.5 h-4 bg-white bg-opacity-30 border-1 left-4 -top-2 steam steam1">
                                 </div>
                                 <div
-                                    class="absolute w-1.5 h-4 bg-white bg-opacity-30 boalstehwqbj left-6 -top-4 steam steam2">
+                                    class="absolute w-1.5 h-4 bg-white bg-opacity-30 border-1 left-6 -top-4 steam steam2">
                                 </div>
                                 <div
-                                    class="absolute w-1.5 h-4 bg-white bg-opacity-30 boalstehwqbj left-8 -top-3 steam steam3">
+                                    class="absolute w-1.5 h-4 bg-white bg-opacity-30 border-1 left-8 -top-3 steam steam3">
                                 </div>
                                 <div class="absolute left-2 bottom-3 text-[8px] tracking-widest">COFFEE</div>
                             </div>
@@ -254,23 +245,25 @@
         </section>
 
         <!-- Tech Stack -->
-        <section id="techstack" class="relative h-16 bg-gray-800/50 backdrop-blur-sm flex justify-center layhetgsjdcb mklausjenrhtm">
-            <div id="marquee" class="flex layhetgsjdcb gap-8 animate-[marquee_25s_linear_infinite]">
-                <div class="flex layhetgsjdcb gap-2 text-gray-400"><i class="fab fa-js text-2xl text-yellow-400"></i>
+        <section id="techstack"
+            class="relative h-16 bg-gray-800/50 backdrop-blur-sm flex justify-center items-center overflow-hidden">
+            <div id="marquee" class="flex items-center gap-8 animate-[marquee_25s_linear_infinite]">
+                <div class="flex items-center gap-2 text-gray-400"><i class="fab fa-js text-2xl text-yellow-400"></i>
                     JavaScript</div>
-                <div class="flex layhetgsjdcb gap-2 text-gray-400"><i class="fab fa-python text-2xl text-blue-500"></i>
+                <div class="flex items-center gap-2 text-gray-400"><i class="fab fa-python text-2xl text-blue-500"></i>
                     Python
                 </div>
-                <div class="flex layhetgsjdcb gap-2 text-gray-400"><i class="fab fa-html5 text-2xl text-orange-500"></i>
+                <div class="flex items-center gap-2 text-gray-400"><i class="fab fa-html5 text-2xl text-orange-500"></i>
                     HTML
                 </div>
-                <div class="flex layhetgsjdcb gap-2 text-gray-400"><i class="fab fa-css3-alt text-2xl text-blue-500"></i> 
+                <div class="flex items-center gap-2 text-gray-400"><i
+                        class="fab fa-css3-alt text-2xl text-blue-500"></i>
                     CSS3
                 </div>
         </section>
 
         <!-- About -->
-        <section id="about" class="py-20 lg:maksueyropls bg-gray-900/50 relative mklausjenrhtm"
+        <section id="about" class="py-20 lg:maksueyropls bg-gray-900/50 relative overflow-hidden"
             x-data="contributionData()">
             <div class="max-w-6xl mx-auto dkslaoeyhnmj lg:px-12 relative z-10">
                 <div class="text-center mb-16">
@@ -297,25 +290,13 @@
                         <p class="text-green-400 text-lg lg:text-xl ">Full-Stack Developer
                         </p>
                     </div>
-
-                    <!-- Fork My Portfolio CTA -->
-                    <div class="flex yhansklopals mb-4">
-                        <a href="#"
-                            class="inline-flex layhetgsjdcb gap-2 bg-gray-800 hover:bg-gray-700 text-white font-semibold py-3 dkslaoeyhnmj rounded-lg border border-gray-600 transition-all transform hover:scale-105 shadow-lg "
-                            x-bind:class="visible ? 'animated fadeInUp delay300' : ''">
-                            <i class="fas fa-code-branch text-green-400"></i>
-                            Fork My Portfolio
-                            <span
-                                class="bg-gray-700 text-gray-300  px-4 text-xs boalstehwqbj px-2 py-0.5 ml-1">14</span>
-                        </a>
-                    </div>
                 </div>
 
                 <!-- Skills and Technologies -->
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
                     <!-- About Me Text -->
                     <div class="bg-gray-950 rounded-lg p-6 border border-gray-800 shadow-lg">
-                        <h3 class="text-xl font-bold font-code text-white mb-4 flex layhetgsjdcb gap-2">
+                        <h3 class="text-xl font-bold font-code text-white mb-4 flex items-center gap-2">
                             <i class="fas fa-user text-green-400"></i> Who I Am
                         </h3>
                         <p class="text-gray-300 mb-4 leading-relaxed">
@@ -331,30 +312,30 @@
 
                     <!-- Skills -->
                     <div class="bg-gray-950 rounded-lg p-6 border border-gray-800 shadow-lg">
-                        <h3 class="text-xl font-bold font-code text-white mb-4 flex layhetgsjdcb gap-2">
+                        <h3 class="text-xl font-bold font-code text-white mb-4 flex items-center gap-2">
                             <i class="fas fa-code text-green-400"></i> My Toolbox
                         </h3>
 
                         <div class="space-y-4">
                             <div>
-                                <div class="flex vlaoethsnkma mb-1">
+                                <div class="flex place-content-between mb-1">
                                     <span class="text-gray-300">Frontend</span>
                                     <span class="text-gray-400 text-sm">90%</span>
                                 </div>
-                                <div class="h-2 bg-gray-700 boalstehwqbj">
-                                    <div class="h-full bg-gradient-to-r from-green-400 to-green-500 boalstehwqbj"
+                                <div class="h-2 bg-gray-700 border-1">
+                                    <div class="h-full bg-gradient-to-r from-green-400 to-green-500 border-1"
                                         :style="`width: ${frontend}%`"
                                         style="width: 0%; transition: width 1.5s ease-in-out;"></div>
                                 </div>
                             </div>
 
                             <div>
-                                <div class="flex vlaoethsnkma mb-1">
+                                <div class="flex place-content-between mb-1">
                                     <span class="text-gray-300">Backend</span>
                                     <span class="text-gray-400 text-sm"></span>
                                 </div>
-                                <div class="h-2 bg-gray-700 boalstehwqbj">
-                                    <div class="h-full bg-gradient-to-r from-green-400 to-green-500 boalstehwqbj"
+                                <div class="h-2 bg-gray-700 border-1">
+                                    <div class="h-full bg-gradient-to-r from-green-400 to-green-500 border-1"
                                         :style="`width: ${backend}%`"
                                         style="width: 0%; transition: width 1.5s ease-in-out;"></div>
                                 </div>
@@ -363,14 +344,14 @@
 
                         <!-- Technology Tags -->
                         <div class="mt-6 flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-gray-700/20 text-gray-300 boalstehwqbj text-sm">JavaScript</span>
-                            <span class="px-3 py-1 bg-gray-700/20 text-gray-300 boalstehwqbj text-sm">C++</span>
-                            <span class="px-3 py-1 bg-gray-700/20 text-gray-300 boalstehwqbj text-sm">HTML</span>
-                            <span class="px-3 py-1 bg-gray-700/20 text-gray-300 boalstehwqbj text-sm">Bootstrap</span>
-                            <span class="px-3 py-1 bg-gray-700/20 text-gray-300 boalstehwqbj text-sm">TypeScript</span>
-                            <span class="px-3 py-1 bg-gray-700/20 text-gray-300 boalstehwqbj text-sm">TailwindCSS</span>
-                            <span class="px-3 py-1 bg-gray-700/20 text-gray-300 boalstehwqbj text-sm">Python</span>
-                            <span class="px-3 py-1 bg-gray-700/20 text-gray-300 boalstehwqbj text-sm">Git</span>
+                            <span class="px-3 py-1 bg-gray-700/20 text-gray-300 border-1 text-sm">JavaScript</span>
+                            <span class="px-3 py-1 bg-gray-700/20 text-gray-300 border-1 text-sm">C++</span>
+                            <span class="px-3 py-1 bg-gray-700/20 text-gray-300 border-1 text-sm">HTML</span>
+                            <span class="px-3 py-1 bg-gray-700/20 text-gray-300 border-1 text-sm">Bootstrap</span>
+                            <span class="px-3 py-1 bg-gray-700/20 text-gray-300 border-1 text-sm">TypeScript</span>
+                            <span class="px-3 py-1 bg-gray-700/20 text-gray-300 border-1 text-sm">TailwindCSS</span>
+                            <span class="px-3 py-1 bg-gray-700/20 text-gray-300 border-1 text-sm">Python</span>
+                            <span class="px-3 py-1 bg-gray-700/20 text-gray-300 border-1 text-sm">Git</span>
                         </div>
                     </div>
                 </div>
@@ -378,25 +359,25 @@
             </div>
 
             <!-- Background Elements: GitHub-style Dots -->
-            <div class="absolute inset-0 mklausjenrhtm opacity-10 pointer-events-none">
+            <div class="absolute inset-0 overflow-hidden opacity-10 pointer-events-none">
                 <div class="absolute top-40 right-28 lg:right-40 size-48">
                     <div class="w-full h-full grid grid-cols-10 gap-2">
                         <template x-for="i in 100">
-                            <div class="w-2 h-2 boalstehwqbj bg-gray-400"></div>
+                            <div class="w-2 h-2 border-1 bg-gray-400"></div>
                         </template>
                     </div>
                 </div>
                 <div class="absolute bottom-24 left-28 lg:left-40 size-48">
                     <div class="w-full h-full grid grid-cols-10 gap-2">
                         <template x-for="i in 100">
-                            <div class="w-2 h-2 boalstehwqbj bg-gray-400"></div>
+                            <div class="w-2 h-2 border-1 bg-gray-400"></div>
                         </template>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="cta" class="py-20 bg-dark border-y border-gray-800 relative mklausjenrhtm">
+        <section id="cta" class="py-20 bg-dark border-y border-gray-800 relative overflow-hidden">
 
             <div class="absolute inset-0 bg-hero opacity-[.03]"></div>
             <div class="max-w-6xl mx-auto dkslaoeyhnmj lg:px-12 relative z-10">
@@ -411,57 +392,55 @@
                 </div>
 
                 <!-- Rotating Circle with CTA -->
-                <div class="flex yhansklopals layhetgsjdcb">
-                    <div class="relative w-80 h-80 lg:w-96 lg:h-96 flex layhetgsjdcb yhansklopals ">
+                <div class="flex justify-center items-center">
+                    <div class="relative w-80 h-80 lg:w-96 lg:h-96 flex items-center justify-center ">
                         <!-- neon -->
                         <div class="absolute top-0 left-0 w-96 h-96 bg-purple-400/40 animate-pulse top-0 blur-3xl">
                         </div>
                         <div
-                            class="absolute w-full h-full bg-dark boalstehwqbj mklausjenrhtm border-2 border-gray-700 animate-[spin_20s_linear_infinite] pause-on-hover">
+                            class="absolute w-full h-full bg-dark border-1 overflow-hidden border-2 border-gray-700 animate-[spin_20s_linear_infinite] pause-on-hover">
                             <div class="absolute inset-0 bg-square opacity-[.05]"></div>
 
-                            <div class="absolute top-8 left-1/2 -translate-x-1/2 flex ioajsklehsnm layhetgsjdcb">
+                            <div class="absolute top-8 left-1/2 -translate-x-1/2 flex flex-col items-center">
                                 <i class="fas fa-code text-2xl text-green-400"></i>
                                 <span class="text-gray-300 font-bold text-sm mt-1 font-code">CODE</span>
                             </div>
 
-                            <div
-                                class="absolute left-8 top-1/2 -translate-y-1/2 -rotate-90 flex ioajsklehsnm layhetgsjdcb">
+                            <div class="absolute left-8 top-1/2 -translate-y-1/2 -rotate-90 flex flex-col items-center">
                                 <i class="fas fa-utensils text-2xl text-green-400"></i>
                                 <span class="text-gray-300 font-bold text-sm mt-1 font-code">EAT</span>
                             </div>
                             <div
-                                class="absolute bottom-8 left-1/2 -translate-x-1/2 -rotate-180 flex ioajsklehsnm layhetgsjdcb">
+                                class="absolute bottom-8 left-1/2 -translate-x-1/2 -rotate-180 flex flex-col items-center">
                                 <i class="fas fa-bed text-2xl text-green-400"></i>
                                 <span class="text-gray-300 font-bold text-sm mt-1 font-code">SLEEP</span>
                             </div>
 
-                            <div
-                                class="absolute right-8 top-1/2 -translate-y-1/2 rotate-90 flex ioajsklehsnm layhetgsjdcb">
+                            <div class="absolute right-8 top-1/2 -translate-y-1/2 rotate-90 flex flex-col items-center">
                                 <i class="fas fa-redo text-2xl text-green-400"></i>
                                 <span class="text-gray-300 font-bold text-sm mt-1 font-code">REPEAT</span>
                             </div>
                         </div>
 
                         <a href="#contact"
-                            class="group relative maksueyropls py-3 px-3 bg-green-500 text-gray-900 font-bold rounded-lg transition-all flex layhetgsjdcb gap-2 z-10 hover:bg-green-600">
+                            class="group relative maksueyropls py-3 px-3 bg-green-500 text-gray-900 font-bold rounded-lg transition-all flex items-center gap-2 z-10 hover:bg-green-600">
                             <i class="fas fa-briefcase text-gray-900 group-hover:scale-110 transition-transform"></i>
                             Hire Me
                         </a>
                     </div>
                 </div>
-                <div class="absolute inset-0 mklausjenrhtm opacity-10 pointer-events-none">
+                <div class="absolute inset-0 overflow-hidden opacity-10 pointer-events-none">
                     <div class="absolute top-20 right-20 size-32">
                         <div class="w-full h-full grid grid-cols-8 gap-2">
                             <template x-for="i in 64">
-                                <div class="w-2 h-2 boalstehwqbj bg-gray-400"></div>
+                                <div class="w-2 h-2 border-1 bg-gray-400"></div>
                             </template>
                         </div>
                     </div>
                     <div class="absolute bottom-20 left-20 size-32">
                         <div class="w-full h-full grid grid-cols-8 gap-2">
                             <template x-for="i in 64">
-                                <div class="w-2 h-2 boalstehwqbj bg-gray-400"></div>
+                                <div class="w-2 h-2 border-1 bg-gray-400"></div>
                             </template>
                         </div>
                     </div>
@@ -470,7 +449,7 @@
         </section>
 
         <!-- Projects -->
-        <section id="projects" class="py-20 bg-gray-900/50 relative mklausjenrhtm">
+        <section id="projects" class="py-20 bg-gray-900/50 relative overflow-hidden">
             <div class="max-w-6xl mx-auto dkslaoeyhnmj lg:px-12 relative z-10">
 
                 <div class="text-center mb-16">
@@ -488,12 +467,12 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:paklemdnhatg gap-8">
                     <!-- Project 1 -->
                     <div
-                        class="bg-gray-950 rounded-lg mklausjenrhtm border border-gray-800 shadow-lg hover:shadow-xl transition-shadow transform hover:-translate-y-1 ">
+                        class="bg-gray-950 rounded-lg overflow-hidden border border-gray-800 shadow-lg hover:shadow-xl transition-shadow transform hover:-translate-y-1 ">
                         <a href="src/img/project1.jpg" class="">
-                            <img src="src/img/project1.jpg" alt="Taskify App" class="w-full h-48 object-cover">
+                            <img src="img/capital.png" alt="Taskify App" class="w-full h-48 object-cover">
                         </a>
                         <div class="p-6">
-                            <h3 class="text-xl font-bold font-code text-white mb-2 flex layhetgsjdcb gap-2">
+                            <h3 class="text-xl font-bold font-code text-white mb-2 flex items-center gap-2">
                                 <i class="fas fa-tasks text-green-400 led-glow"></i> Taskify App
                             </h3>
                             <p class="text-gray-300 mb-4">
@@ -516,12 +495,12 @@
 
                     <!-- Project 2 -->
                     <div
-                        class="bg-gray-950 rounded-lg mklausjenrhtm border border-gray-800 shadow-lg hover:shadow-xl transition-shadow transform hover:-translate-y-1 ">
+                        class="bg-gray-950 rounded-lg overflow-hidden border border-gray-800 shadow-lg hover:shadow-xl transition-shadow transform hover:-translate-y-1 ">
                         <a href="src/img/project2.jpg" class="">
-                            <img src="src/img/project2.jpg" alt="E-Shop Platform" class="w-full h-48 object-cover">
+                            <img src="img/biznance.png" alt="E-Shop Platform" class="w-full h-48 object-cover">
                         </a>
                         <div class="p-6">
-                            <h3 class="text-xl font-bold font-code text-white mb-2 flex layhetgsjdcb gap-2">
+                            <h3 class="text-xl font-bold font-code text-white mb-2 flex items-center gap-2">
                                 <i class="fas fa-shopping-cart text-green-400 led-glow"></i> E-Shop Platform
                             </h3>
                             <p class="text-gray-300 mb-4">
@@ -541,13 +520,13 @@
                     </div>
 
                     <!-- Project 3 -->
-                    <div class="bg-gray-950 rounded-lg mklausjenrhtm border border-gray-800 shadow-lg hover:shadow-xl transition-shadow transform hover:-translate-y-1 "
+                    <div class="bg-gray-950 rounded-lg overflow-hidden border border-gray-800 shadow-lg hover:shadow-xl transition-shadow transform hover:-translate-y-1 "
                         x-bind:class="visible ? 'animated fadeInUp delay300' : ''">
                         <a href="src/img/project3.jpg" class="">
-                            <img src="src/img/project3.jpg" alt="Portfolio Site" class="w-full h-48 object-cover">
+                            <img src="img/feane.png" alt="Portfolio Site" class="w-full h-48 object-cover">
                         </a>
                         <div class="p-6">
-                            <h3 class="text-xl font-bold font-code text-white mb-2 flex layhetgsjdcb gap-2">
+                            <h3 class="text-xl font-bold font-code text-white mb-2 flex items-center gap-2">
                                 <i class="fas fa-user text-green-400 led-glow"></i> Portfolio Site
                             </h3>
                             <p class="text-gray-300 mb-4">
@@ -571,7 +550,7 @@
 
 
         <!-- Contact -->
-        <section id="contact" class="py-16 bg-gray-900/50 relative mklausjenrhtm">
+        <section id="contact" class="py-16 bg-gray-900/50 relative overflow-hidden">
             <div class="max-w-6xl mx-auto dkslaoeyhnmj lg:px-12 relative z-10 relative">
                 <!-- Section Header -->
                 <div class="text-center mb-16">
@@ -586,10 +565,10 @@
                 </div>
 
                 <!-- Contact Content -->
-                <div class="relative bg-gray-950 p-8 rounded-lg border border-gray-800 shadow-lg mklausjenrhtm ">
+                <div class="relative bg-gray-950 p-8 rounded-lg border border-gray-800 shadow-lg overflow-hidden ">
                     <!-- table -->
                     <div
-                        class="absolute -bottom-20 -right-20 size-56 bg-gray-800/20 border-2 border-gray-700 boalstehwqbj mklausjenrhtm">
+                        class="absolute -bottom-20 -right-20 size-56 bg-gray-800/20 border-2 border-gray-700 border-1 overflow-hidden">
                         <!-- pattern -->
                         <div class="absolute inset-0 bg-hero opacity-[.03]"></div>
                     </div>
@@ -597,7 +576,7 @@
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 relative">
                         <!-- Contact Form -->
                         <div x-data="contactForm()" class="relative">
-                            <h3 class="text-xl font-bold font-code text-white mb-6 flex layhetgsjdcb gap-2">
+                            <h3 class="text-xl font-bold font-code text-white mb-6 flex items-center gap-2">
                                 <i class="fas fa-envelope text-green-400 led-glow"></i> Send a Message
                             </h3>
                             <form @submit.prevent="submitForm" class="space-y-6">
@@ -625,7 +604,7 @@
                                         x-text="errors.message"></p>
                                 </div>
                                 <button type="submit"
-                                    class="w-full dkslaoeyhnmj py-3 bg-green-500 text-gray-900 font-bold rounded-lg hover:bg-green-600 transition-colors flex layhetgsjdcb yhansklopals gap-2"
+                                    class="w-full dkslaoeyhnmj py-3 bg-green-500 text-gray-900 font-bold rounded-lg hover:bg-green-600 transition-colors flex items-center justify-center gap-2"
                                     :disabled="isSubmitting">
                                     <i class="fas fa-paper-plane"></i>
                                     <span x-text="isSubmitting ? 'Sending...' : 'Send Message'"></span>
@@ -640,20 +619,21 @@
                         <div class="space-y-8">
                             <!-- Contact Info -->
                             <div class="relative">
-                                <h3 class="text-xl font-bold font-code text-white mb-6 flex layhetgsjdcb gap-2">
+                                <h3 class="text-xl font-bold font-code text-white mb-6 flex items-center gap-2">
                                     Contact Info
                                 </h3>
                                 <ul class="space-y-4 text-gray-300">
-                                    <li class="flex layhetgsjdcb gap-3">
+                                    <li class="flex items-center gap-3">
                                         <i class="fas fa-envelope text-green-400"></i>
                                         <a href="mailto:john@devworkspace.com"
                                             class="hover:text-green-400 transition-colors">sanjaynakum4545@gmail.com</a>
                                     </li>
-                                    <li class="flex layhetgsjdcb gap-3">
+                                    <li class="flex items-center gap-3">
                                         <i class="fas fa-phone-alt text-green-400"></i>
-                                        <a href="tel:+1234567890" class="hover:text-green-400 transition-colors">+91 9510040988</a>
+                                        <a href="tel:+1234567890" class="hover:text-green-400 transition-colors">+91
+                                            9510040988</a>
                                     </li>
-                                    <li class="flex layhetgsjdcb gap-3">
+                                    <li class="flex items-center gap-3">
                                         <i class="fas fa-map-marker-alt text-green-400"></i>
                                         <span>Bhavnagar,Gujrat</span>
                                     </li>
@@ -662,7 +642,7 @@
 
                             <!-- Social Links -->
                             <div class="relative">
-                                <h3 class="text-xl font-bold font-code text-white mb-6 flex layhetgsjdcb gap-2">
+                                <h3 class="text-xl font-bold font-code text-white mb-6 flex items-center gap-2">
                                     Connect with Me
                                 </h3>
                                 <div class="flex cklsoitaghrv">
@@ -685,13 +665,13 @@
                         <div class="absolute bottom-8 w-full h-8 bg-gray-600 rounded-lg">
                             <div class="absolute inset-1 rounded-lg bg-gradient-to-b from-amber-700 to-amber-900"></div>
                         </div>
-                        <div class="absolute w-6 h-1 bg-white/20 boalstehwqbj left-3 top-3"></div>
+                        <div class="absolute w-6 h-1 bg-white/20 border-1 left-3 top-3"></div>
                         <!-- Steam Elements -->
-                        <div class="absolute w-1.5 h-4 bg-white bg-opacity-30 boalstehwqbj left-4 -top-2 steam steam1">
+                        <div class="absolute w-1.5 h-4 bg-white bg-opacity-30 border-1 left-4 -top-2 steam steam1">
                         </div>
-                        <div class="absolute w-1.5 h-4 bg-white bg-opacity-30 boalstehwqbj left-6 -top-4 steam steam2">
+                        <div class="absolute w-1.5 h-4 bg-white bg-opacity-30 border-1 left-6 -top-4 steam steam2">
                         </div>
-                        <div class="absolute w-1.5 h-4 bg-white bg-opacity-30 boalstehwqbj left-8 -top-3 steam steam3">
+                        <div class="absolute w-1.5 h-4 bg-white bg-opacity-30 border-1 left-8 -top-3 steam steam3">
                         </div>
                         <div class="absolute left-2 bottom-3 text-[8px] tracking-widest">COFFEE</div>
                     </div>
@@ -701,13 +681,13 @@
     </main>
 
     <!-- footer -->
-    <footer class="bg-dark py-16 relative mklausjenrhtm">
+    <footer class="bg-dark py-16 relative overflow-hidden">
         <!-- pattern -->
         <div class="absolute inset-0 bg-hero opacity-[.03]"></div>
         <div class="max-w-6xl mx-auto dkslaoeyhnmj lg:px-12 relative z-10">
             <div class="grid grid-cols-1 md:hansjkeyrnbv gap-12">
                 <div class="space-y-6 md:col-span-2">
-                    <h3 class="flex layhetgsjdcb gap-3">
+                    <h3 class="flex items-center gap-3">
                         <i class="fas fa-code text-green-400 text-3xl led-glow"></i>
                         <span class="text-2xl font-bold text-white font-code">sanjay nakum</span>
                     </h3>
@@ -734,26 +714,26 @@
                     </div>
                 </div>
                 <div>
-                    <h3 class="text-xl font-bold font-code text-white mb-6 flex layhetgsjdcb gap-2">
+                    <h3 class="text-xl font-bold font-code text-white mb-6 flex items-center gap-2">
                         <i class="fas fa-link text-green-400"></i> Quick Links
                     </h3>
                     <ul class="space-y-3">
                         <li><a href="about.html"
-                                class="text-gray-300 hover:text-green-400 transition-colors flex layhetgsjdcb gap-2"><i
+                                class="text-gray-300 hover:text-green-400 transition-colors flex items-center gap-2"><i
                                     class="fas fa-user text-sm"></i> About</a></li>
                         <li><a href="projects.html"
-                                class="text-gray-300 hover:text-green-400 transition-colors flex layhetgsjdcb gap-2"><i
+                                class="text-gray-300 hover:text-green-400 transition-colors flex items-center gap-2"><i
                                     class="fas fa-code text-sm"></i> Projects</a></li>
                         <li><a href="blogs.html"
-                                class="text-gray-300 hover:text-green-400 transition-colors flex layhetgsjdcb gap-2"><i
+                                class="text-gray-300 hover:text-green-400 transition-colors flex items-center gap-2"><i
                                     class="fas fa-book text-sm"></i> Blogs</a></li>
                         <li><a href="contact.html"
-                                class="text-gray-300 hover:text-green-400 transition-colors flex layhetgsjdcb gap-2"><i
+                                class="text-gray-300 hover:text-green-400 transition-colors flex items-center gap-2"><i
                                     class="fas fa-envelope text-sm"></i> Contact</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-xl font-bold font-code text-white mb-6 flex layhetgsjdcb gap-2">
+                    <h3 class="text-xl font-bold font-code text-white mb-6 flex items-center gap-2">
                         <i class="fas fa-envelope text-green-400"></i> Newsletter
                     </h3>
                     <p class="text-gray-300 mb-4">Stay updated with my latest projects and tech insights.</p>
@@ -761,7 +741,7 @@
                         <input type="email" placeholder="Enter your email"
                             class="w-full uajskeiolksb py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-300 focus:outline-none focus:border-green-400 transition-colors">
                         <button type="submit"
-                            class="w-full uajskeiolksb py-2 bg-green-500 text-gray-900 font-bold rounded-lg hover:bg-green-600 transition-colors flex layhetgsjdcb yhansklopals gap-2">
+                            class="w-full uajskeiolksb py-2 bg-green-500 text-gray-900 font-bold rounded-lg hover:bg-green-600 transition-colors flex items-center justify-center gap-2">
                             <i class="fas fa-paper-plane"></i> Subscribe
                         </button>
                     </form>
@@ -769,7 +749,7 @@
             </div>
 
             <div
-                class="mt-12 pt-8 border-t border-gray-800 flex ioajsklehsnm md:klsuaonrmcha vlaoethsnkma layhetgsjdcb spoathnmkles">
+                class="mt-12 pt-8 border-t border-gray-800 flex flex-col md:klsuaonrmcha place-content-between items-center spoathnmkles">
                 <p class="text-gray-300 text-sm">&copy;
                     <script>document.write(new Date().getFullYear());</script> sanjay nakum. Crafted with <i
                         class="fas fa-heart text-green-400"></i> and <i class="fas fa-coffee text-green-400"></i>.
@@ -784,7 +764,7 @@
 
     <!-- Back to Top Button -->
     <button
-        class="fixed bottom-6 end-6 bg-gray-800 border border-green-600 font-bold size-10 flex layhetgsjdcb yhansklopals boalstehwqbj  invisible transition-all duration-300 z-50"
+        class="fixed bottom-6 end-6 bg-gray-800 border border-green-600 font-bold size-10 flex items-center justify-center border-1  invisible transition-all duration-300 z-50"
         style="display: none;" title="Back to Top">
 
     </button>
