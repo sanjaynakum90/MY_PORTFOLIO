@@ -7,6 +7,7 @@
     <title>DevProt</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
@@ -19,6 +20,12 @@
                 <span class="text-xl font-bold text-white font-code">sanjay nakum</span>
             </a>
             <div class="hidden md:flex items-center gap-10">
+                <a href="#Home"
+                    class="text-gray-300 hover:text-green-400 [&.active]:text-green-400 [&.active>span]:w-full transition-colors font-medium relative group">
+                    Home
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-400 transition-all group-hover:w-full"></span>
+                </a>
                 <a href="#about"
                     class="text-gray-300 hover:text-green-400 [&.active]:text-green-400 [&.active>span]:w-full transition-colors font-medium relative group">
                     About
@@ -55,6 +62,8 @@
                     x-transition:leave="transition ease-in duration-200"
                     x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end=" -translate-y-2"
                     class="absolute top-full left-0 right-0 bg-gray-950 border-b border-gray-800 p-6 flex  shadow-lg">
+                    <a href="#Home"
+                        class="text-gray-300 hover:text-green-400 [&.active]:text-green-400 transition-colors font-medium">Home</a>
                     <a href="#about"
                         class="text-gray-300 hover:text-green-400 [&.active]:text-green-400 transition-colors font-medium">About</a>
                     <a href="#projects"
@@ -68,7 +77,7 @@
 
     <main>
         <!-- Hero -->
-        <section id="hero" class="relative xl:min-h-screen relative overflow-hidden pt-20 pb-16">
+        <section id="Home" class="relative xl:min-h-screen relative overflow-hidden pt-20 pb-16">
             <div class="absolute inset-0 bg-hero opacity-[.03]"></div>
             <!-- Content -->
             <div class="max-w-6xl mx-auto dkslaoeyhnmj lg:px-12 relative z-10">
@@ -84,8 +93,9 @@
                         </div>
 
                         <p class="text-lg text-gray-300 max-w-xl mx-auto leading-relaxed ">
-                            Crafting elegant solutions to complex problems with clean code and innovative thinking.
-                            Welcome to my personal dev workspace where ideas come to life.
+                            I'm Full Stack Developer eager to kickstart my career in web development. With a strong
+                            foundation in both front-end and back-end technologies, I’m ready to bring fresh ideas and
+                            enthusiasm to any project.
                         </p>
 
                         <div class="flex flex-wrap justify-center spoathnmkles py-2 gap-10">
@@ -256,9 +266,25 @@
                 <div class="flex items-center gap-2 text-gray-400"><i class="fab fa-html5 text-2xl text-orange-500"></i>
                     HTML
                 </div>
+                <div class="flex items-center gap-2 text-gray-400"><i class='bx bxl-tailwind-css'
+                        style="color: #38BDF8;"></i>
+                    tailwind
+                </div>
+                <div class="flex items-center gap-2 text-gray-400"><i class=' bx bxl-jquery'
+                        style="color: #38BDF8;"></i>
+                    JQuery
+                </div>
                 <div class="flex items-center gap-2 text-gray-400"><i
                         class="fab fa-css3-alt text-2xl text-blue-500"></i>
-                    CSS3
+                    C++
+                </div>
+                <div class="flex items-center gap-2 text-gray-400"><i
+                        class="fab fa-css3-alt text-2xl text-blue-500"></i>
+                    CSS
+                </div>
+                <div class="flex items-center gap-2 text-gray-400"><i
+                        class="fab fa-bootstrap text-2xl text-blue-600"></i>
+                    Bootstrap
                 </div>
         </section>
 
@@ -300,13 +326,13 @@
                             <i class="fas fa-user text-green-400"></i> Who I Am
                         </h3>
                         <p class="text-gray-300 mb-4 leading-relaxed">
-                            I'm a passionate developer with 5+ years of experience building web applications and
-                            contributing to open source projects. I specialize in creating clean, efficient, and
-                            maintainable code.
+                            I use tools like HTML, CSS, JavaScript, React.js for the front-end, and Node.js, Express,
+                            and MongoDB for the back-end. My goal is to build websites that are not only functional but
+                            also user-friendly and visually appealing.
                         </p>
                         <p class="text-gray-300 leading-relaxed">
-                            When I'm not coding, you can find me exploring new technologies, writing tech articles,
-                            or enjoying a fresh cup of coffee while debugging complex problems.
+                            I’m passionate about learning new technologies and solving real-world problems through code.
+                            Let’s create something amazing together! add_elementsquare_element
                         </p>
                     </div>
 
@@ -521,8 +547,8 @@
 
                     <!-- Project 3 -->
                     <div class="bg-gray-950 rounded-lg overflow-hidden border border-gray-800 shadow-lg hover:shadow-xl transition-shadow transform hover:-translate-y-1 "
-                        x-bind:class="visible ? 'animated fadeInUp delay300' : ''">
-                        <a href="src/img/project3.jpg" class="">
+                        x-bind:class="visible ? ' animated fadeInUp delay300' : ''">
+                        <a href=" src/img/project3.jpg" class="">
                             <img src="img/feane.png" alt="Portfolio Site" class="w-full h-48 object-cover">
                         </a>
                         <div class="p-6">
@@ -583,14 +609,14 @@
                                 <div>
                                     <label for="name" class="block text-gray-300 mb-2 font-medium">Name</label>
                                     <input type="text" id="name" x-model="form.name"
-                                        class="w-full uajskeiolksb py-3 bg-gray-800 border border-gray-700 rounded-lg text-gray-300 focus:outline-none focus:border-green-400 transition-colors"
+                                        class="w-full py-3 px-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-300 focus:outline-none focus:border-green-400 transition-colors"
                                         placeholder="Your Name" required>
                                     <p x-show="errors.name" class="text-red-400 text-sm mt-1" x-text="errors.name"></p>
                                 </div>
                                 <div>
                                     <label for="email" class="block text-gray-300 mb-2 font-medium">Email</label>
                                     <input type="email" id="email" x-model="form.email"
-                                        class="w-full uajskeiolksb py-3 bg-gray-800 border border-gray-700 rounded-lg text-gray-300 focus:outline-none focus:border-green-400 transition-colors"
+                                        class="w-full py-3 px-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-300 focus:outline-none focus:border-green-400 transition-colors"
                                         placeholder="Your Email" required>
                                     <p x-show="errors.email" class="text-red-400 text-sm mt-1" x-text="errors.email">
                                     </p>
@@ -598,7 +624,7 @@
                                 <div>
                                     <label for="message" class="block text-gray-300 mb-2 font-medium">Message</label>
                                     <textarea id="message" x-model="form.message" rows="5"
-                                        class="w-full uajskeiolksb py-3 bg-gray-800 border border-gray-700 rounded-lg text-gray-300 focus:outline-none focus:border-green-400 transition-colors"
+                                        class="w-full py-3 px-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-300 focus:outline-none focus:border-green-400 transition-colors"
                                         placeholder="Your Message" required></textarea>
                                     <p x-show="errors.message" class="text-red-400 text-sm mt-1"
                                         x-text="errors.message"></p>
@@ -645,14 +671,22 @@
                                 <h3 class="text-xl font-bold font-code text-white mb-6 flex items-center gap-2">
                                     Connect with Me
                                 </h3>
-                                <div class="flex cklsoitaghrv">
-                                    <a href="https://github.com/" target="_blank"
-                                        class="text-gray-300 hover:text-green-400 text-2xl transition-colors transform hover:scale-110">
+                                <div class="flex gap-5">
+                                    <a href="#"
+                                        class="text-gray-300 hover:text-green-400 text-xl transition-colors transform hover:scale-110">
                                         <i class="fab fa-github"></i>
                                     </a>
-                                    <a href="https://linkedin.com/in/" target="_blank"
-                                        class="text-gray-300 hover:text-green-400 text-2xl transition-colors transform hover:scale-110">
+                                    <a href="#"
+                                        class="text-gray-300 hover:text-green-400 text-xl transition-colors transform hover:scale-110">
                                         <i class="fab fa-linkedin"></i>
+                                    </a>
+                                    <a href="#"
+                                        class="text-gray-300 hover:text-green-400 text-xl transition-colors transform hover:scale-110">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#"
+                                        class="text-gray-300 hover:text-green-400 text-xl transition-colors transform hover:scale-110">
+                                        <i class="fab fa-dev"></i>
                                     </a>
                                 </div>
                             </div>
@@ -685,7 +719,7 @@
         <!-- pattern -->
         <div class="absolute inset-0 bg-hero opacity-[.03]"></div>
         <div class="max-w-6xl mx-auto dkslaoeyhnmj lg:px-12 relative z-10">
-            <div class="grid grid-cols-1 md:hansjkeyrnbv gap-12">
+            <div class="grid grid-cols-4  gap-10 flex flex-row">
                 <div class="space-y-6 md:col-span-2">
                     <h3 class="flex items-center gap-3">
                         <i class="fas fa-code text-green-400 text-3xl led-glow"></i>
@@ -718,15 +752,12 @@
                         <i class="fas fa-link text-green-400"></i> Quick Links
                     </h3>
                     <ul class="space-y-3">
-                        <li><a href="about.html"
+                        <li><a href="about"
                                 class="text-gray-300 hover:text-green-400 transition-colors flex items-center gap-2"><i
                                     class="fas fa-user text-sm"></i> About</a></li>
-                        <li><a href="projects.html"
+                        <li><a href="projects"
                                 class="text-gray-300 hover:text-green-400 transition-colors flex items-center gap-2"><i
                                     class="fas fa-code text-sm"></i> Projects</a></li>
-                        <li><a href="blogs.html"
-                                class="text-gray-300 hover:text-green-400 transition-colors flex items-center gap-2"><i
-                                    class="fas fa-book text-sm"></i> Blogs</a></li>
                         <li><a href="contact.html"
                                 class="text-gray-300 hover:text-green-400 transition-colors flex items-center gap-2"><i
                                     class="fas fa-envelope text-sm"></i> Contact</a></li>
@@ -739,22 +770,21 @@
                     <p class="text-gray-300 mb-4">Stay updated with my latest projects and tech insights.</p>
                     <form class="space-y-3">
                         <input type="email" placeholder="Enter your email"
-                            class="w-full uajskeiolksb py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-300 focus:outline-none focus:border-green-400 transition-colors">
+                            class="w-full py-3 px-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-300 focus:outline-none focus:border-green-400 transition-colors">
                         <button type="submit"
-                            class="w-full uajskeiolksb py-2 bg-green-500 text-gray-900 font-bold rounded-lg hover:bg-green-600 transition-colors flex items-center justify-center gap-2">
+                            class="w-full py-3 px-2 bg-green-500 text-gray-900 font-bold rounded-lg hover:bg-green-600 transition-colors flex items-center justify-center gap-2">
                             <i class="fas fa-paper-plane"></i> Subscribe
                         </button>
                     </form>
                 </div>
             </div>
 
-            <div
-                class="mt-12 pt-8 border-t border-gray-800 flex flex-col md:klsuaonrmcha place-content-between items-center spoathnmkles">
-                <p class="text-gray-300 text-sm">&copy;
+            <div class="mt-12 pt-8 border-t border-gray-800 flex flex-wrap place-content-between items-center ">
+                <p class="text-gray-300 text-sm"><i class="fa-regular fa-copyright"></i>
                     <script>document.write(new Date().getFullYear());</script> sanjay nakum. Crafted with <i
                         class="fas fa-heart text-green-400"></i> and <i class="fas fa-coffee text-green-400"></i>.
                 </p>
-                <div class="flex cklsoitaghrv text-gray-300 text-sm">
+                <div class="text-gray-300 text-sm">
                     <a href="privacy.html" class="hover:text-green-400 transition-colors">Privacy Policy</a>
                     <a href="terms.html" class="hover:text-green-400 transition-colors">Terms of Service</a>
                 </div>

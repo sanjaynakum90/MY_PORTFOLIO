@@ -11,7 +11,7 @@
 }
 
 .bg-hero {
-    background-image: url('../img/pattern-code.png');
+    background-image: url('img/pattern-code.png');
     background-repeat: repeat;
 }
 
@@ -20,17 +20,28 @@
     background-repeat: repeat;
 }
 
-.glightbox-clean .gslide-description {
-    color: white !important;
-    background: #000000 !important;
-}
-
-.glightbox-clean .gslide-title {
-    color: white !important;
+.dkslaoeyhnmj {
+    padding-inline: calc(var(--spacing) * 6);
 }
 
 .led-glow {
     animation: glow 2s ease-in-out infinite alternate;
+}
+
+.steam {
+    animation: steamRise 2s infinite ease-in-out;
+}
+
+.steam1 {
+    animation-delay: 0s;
+}
+
+.steam2 {
+    animation-delay: 0.5s;
+}
+
+.steam3 {
+    animation-delay: 1s;
 }
 
 @keyframes glow {
