@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body class="bg-gray-950 text-gray-100 font-sans">
@@ -77,13 +73,13 @@
     </header>
 
     <main>
-        <!-- Hero -->
+
         <section id="Home" class="relative xl:min-h-screen relative overflow-hidden pt-20 pb-16">
             <div class="absolute inset-0 bg-hero opacity-[.03]"></div>
-            <!-- Content -->
+
             <div class="max-w-6xl mx-auto dkslaoeyhnmj lg:px-12 relative z-10">
                 <div class="flex flex-col items-center gap-8 xl:gap-12">
-                    <!-- Left Column: Developer Info -->
+
                     <div class="w-full text-center space-y-6 xl:pt-8" x-intersect:enter="isHeaderVisible = true"
                         x-intersect:leave="isHeaderVisible = false">
                         <div class="space-y-2">
@@ -177,7 +173,7 @@
                                             <div class="w-3 h-3 bg-gray-700 rounded"></div>
                                         </div>
 
-                                        <!-- Editor -->
+                                        <!-- Editor veiws -->
                                         <div class="flex-1 p-1">
                                             <pre class="font-code text-[0.4rem] lg:text-[0.5rem] leading-tight">
 <span class="text-purple-400">import</span> <span class="text-blue-400">React</span> <span class="text-purple-400">from</span> <span class="text-green-400">'react'</span>;
@@ -236,7 +232,6 @@
                                     </div>
                                 </div>
                                 <div class="absolute w-6 h-1 bg-white/20 border-1 left-3 top-3"></div>
-                                <!-- Steam Elements -->
                                 <div
                                     class="absolute w-1.5 h-4 bg-white bg-opacity-30 border-1 left-4 -top-2 steam steam1">
                                 </div>
@@ -265,7 +260,7 @@
             </div>
         </section>
 
-        <!-- Tech Stack -->
+        <!-- Tech Stack  start-->
         <section id="techstack"
             class="relative h-16 bg-gray-800/50 backdrop-blur-sm flex justify-center items-center overflow-hidden">
             <div id="marquee" class="flex items-center gap-8 animate-[marquee_25s_linear_infinite]">
@@ -298,8 +293,10 @@
                     Bootstrap
                 </div>
         </section>
+        <!-- Tech Stack end-->
 
-        <!-- About -->
+
+        <!-- About start-->
         <section id="about" class="py-20 lg:maksueyropls bg-gray-900/50 relative overflow-hidden"
             x-data="contributionData()">
             <div class="max-w-6xl mx-auto dkslaoeyhnmj lg:px-12 relative z-10">
@@ -312,16 +309,13 @@
                         Passionate developer with a love for clean code, strong coffee, and open source contributions.
                     </p>
                 </div>
-
-                <!-- GitHub Contribution Grid -->
                 <div class="relative lg:max-w-5xl mx-auto lg:px-12">
 
-                    <!-- Tooltip -->
                     <div x-ref="tooltip"
                         class="absolute hidden bg-gray-800 text-white text-xs p-2 rounded shadow-lg border border-gray-700 z-20 pointer-events-none"
-                        x-text="tooltipText"></div>
+                        x-text="tooltipText">
+                    </div>
 
-                    <!-- Name and Role -->
                     <div class="text-center mt-10 mb-6">
                         <h3 class="text-2xl lg:text-3xl font-bold font-code text-white mb-2 ">sanjay nakum</h3>
                         <p class="text-green-400 text-lg lg:text-xl ">Full-Stack Developer
@@ -331,7 +325,6 @@
 
                 <!-- Skills and Technologies -->
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                    <!-- About Me Text -->
                     <div class="bg-gray-950 rounded-lg p-6 border border-gray-800 shadow-lg">
                         <h3 class="text-xl font-bold font-code text-white mb-4 flex items-center gap-2">
                             <i class="fas fa-user text-green-400"></i> Who I Am
@@ -347,7 +340,6 @@
                         </p>
                     </div>
 
-                    <!-- Skills -->
                     <div class="bg-gray-950 rounded-lg p-6 border border-gray-800 shadow-lg">
                         <h3 class="text-xl font-bold font-code text-white mb-4 flex items-center gap-2">
                             <i class="fas fa-code text-green-400"></i> My Toolbox
@@ -356,63 +348,135 @@
                         <div class="space-y-4">
                             <div>
                                 <div class="flex place-content-between mb-1">
-                                    <span class="text-gray-300">Frontend</span>
-                                    <span class="text-gray-400 text-sm">90%</span>
+                                    <span class="text-gray-300 font-semibold">Frontend</span>
+                                    <span class="text-green-400 text-sm font-bold">90%</span>
                                 </div>
-                                <div class="h-2 bg-gray-700 border-1">
-                                    <div class="h-full bg-gradient-to-r from-green-400 to-green-500 border-1"
-                                        :style="`width: ${frontend}%`"
-                                        style="width: 0%; transition: width 1.5s ease-in-out;"></div>
+                                <div
+                                    class="h-2 bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 rounded-full overflow-hidden shadow-inner">
+                                    <div class="h-full bg-gradient-to-r from-green-400 via-green-500 to-green-600 rounded-full transition-all duration-1500"
+                                        style="width: 0%; box-shadow: 0 0 8px 2px #22c55e99;">
+                                    </div>
                                 </div>
                             </div>
 
                             <div>
                                 <div class="flex place-content-between mb-1">
-                                    <span class="text-gray-300">Backend</span>
-                                    <span class="text-gray-400 text-sm"></span>
+                                    <span class="text-gray-300 font-semibold">Backend</span>
+                                    <span class="text-green-400 text-sm font-bold">60%</span>
                                 </div>
-                                <div class="h-2 bg-gray-700 border-1">
-                                    <div class="h-full bg-gradient-to-r from-green-400 to-green-500 border-1"
-                                        :style="`width: ${backend}%`"
-                                        style="width: 0%; transition: width 1.5s ease-in-out;"></div>
+                                <div
+                                    class="h-2 bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 rounded-full overflow-hidden shadow-inner">
+                                    <div class="h-full bg-gradient-to-r from-green-400 via-green-500 to-green-600 rounded-full transition-all duration-1500"
+                                        style="width: 0%; box-shadow: 0 0 8px 2px #22c55e99;"></div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- Technology Tags -->
-                        <div class="mt-6 flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-gray-700/20 text-gray-300 border-1 text-sm">JavaScript</span>
-                            <span class="px-3 py-1 bg-gray-700/20 text-gray-300 border-1 text-sm">C++</span>
-                            <span class="px-3 py-1 bg-gray-700/20 text-gray-300 border-1 text-sm">HTML</span>
-                            <span class="px-3 py-1 bg-gray-700/20 text-gray-300 border-1 text-sm">Bootstrap</span>
-                            <span class="px-3 py-1 bg-gray-700/20 text-gray-300 border-1 text-sm">TypeScript</span>
-                            <span class="px-3 py-1 bg-gray-700/20 text-gray-300 border-1 text-sm">TailwindCSS</span>
-                            <span class="px-3 py-1 bg-gray-700/20 text-gray-300 border-1 text-sm">Python</span>
-                            <span class="px-3 py-1 bg-gray-700/20 text-gray-300 border-1 text-sm">Git</span>
+                            <!-- Technology Tags -->
+                            <div class="mt-6 flex flex-wrap gap-2">
+                                <span
+                                    class="px-3 py-1 bg-yellow-400 text-gray-900 border-1 text-sm rounded transition-all duration-300 hover:scale-110 hover:bg-yellow-500 hover:shadow-lg hover:animate-bounce">JavaScript</span>
+                                <span
+                                    class="px-3 py-1 bg-blue-400 text-gray-900 border-1 text-sm rounded transition-all duration-300 hover:scale-110 hover:bg-blue-500 hover:shadow-lg hover:animate-bounce">C++</span>
+                                <span
+                                    class="px-3 py-1 bg-orange-400 text-gray-900 border-1 text-sm rounded transition-all duration-300 hover:scale-110 hover:bg-orange-500 hover:shadow-lg hover:animate-bounce">HTML</span>
+                                <span
+                                    class="px-3 py-1 bg-purple-400 text-gray-900 border-1 text-sm rounded transition-all duration-300 hover:scale-110 hover:bg-purple-500 hover:shadow-lg hover:animate-bounce">Bootstrap</span>
+                                <span
+                                    class="px-3 py-1 bg-blue-400 text-gray-900 border-1 text-sm rounded transition-all duration-300 hover:scale-110 hover:bg-blue-600 hover:shadow-lg hover:animate-bounce">TypeScript</span>
+                                <span
+                                    class="px-3 py-1 bg-cyan-400 text-gray-900 border-1 text-sm rounded transition-all duration-300 hover:scale-110 hover:bg-blue-400 hover:shadow-lg hover:animate-bounce">TailwindCSS</span>
+                                <span
+                                    class="px-3 py-1 bg-green-400 text-gray-900 border-1 text-sm rounded transition-all duration-300 hover:scale-110 hover:bg-green-500 hover:shadow-lg hover:animate-bounce">Python</span>
+                                <span
+                                    class="px-3 py-1 bg-gray-400 text-gray-900 border-1 text-sm rounded transition-all duration-300 hover:scale-110 hover:bg-gray-500 hover:shadow-lg hover:animate-bounce">Git</span>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-
-            <!-- Background Elements: GitHub-style Dots -->
-            <div class="absolute inset-0 overflow-hidden opacity-10 pointer-events-none">
-                <div class="absolute top-40 right-28 lg:right-40 size-48">
-                    <div class="w-full h-full grid grid-cols-10 gap-2">
-                        <template x-for="i in 100">
-                            <div class="w-2 h-2 border-1 bg-gray-400"></div>
-                        </template>
-                    </div>
-                </div>
-                <div class="absolute bottom-24 left-28 lg:left-40 size-48">
-                    <div class="w-full h-full grid grid-cols-10 gap-2">
-                        <template x-for="i in 100">
-                            <div class="w-2 h-2 border-1 bg-gray-400"></div>
-                        </template>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- about section end -->
+
+        <!-- skill section start -->
+        <section id="skill" class="py-20 bg-gray-900/50 relative overflow-hidden">
+            <div class="max-w-6xl mx-auto lg:px-12 relative z-10">
+                <div class="text-center mb-16">
+                    <h2
+                        class="text-3xl lg:text-4xl font-bold font-code inline-block relative text-white mb-1 animate__animated animate__fadeInDown animate__slower">
+                        My <span class="text-green-400">Skills</span>
+                        <div class="absolute -bottom-2 left-0 w-full h-1 bg-green-500 opacity-70"></div>
+                    </h2>
+                    <p class="text-gray-400 mt-4 max-w-2xl mx-auto animate__animated animate__fadeInUp animate__slower">
+                        <span class="inline-block text-green-400 font-bold">Full-stack developer</span> blending
+                        creativity and code.<br>
+                        I craft immersive web experiences using <span class="text-yellow-400">JavaScript</span>, <span
+                            class="text-blue-400">React</span>, <span class="text-green-400">Node.js</span>, and
+                        more.<br>
+                        My toolbox is always growing—explore below to see the technologies I use to turn ideas into
+                        reality.
+                    </p>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center mt-10">
+
+                <div class="bg-gray-950 rounded-lg p-6 border border-gray-800 shadow-lg transition-all duration-300 hover:-translate-y-3 hover:scale-105 hover:border-green-400 hover:shadow-2xl group animate__animated animate__fadeInUp"
+                    style="animation-delay:0.1s;">
+                    <i class="fab fa-js text-4xl text-yellow-400 mb-2 group-hover:animate-bounce"></i>
+                    <h3 class="text-lg font-bold text-white mb-1 group-hover:text-green-400 transition-colors">
+                        JavaScript</h3>
+                    <p class="text-gray-400 text-sm">Frontend & Backend</p>
+                </div>
+                <div class="bg-gray-950 rounded-lg p-6 border border-gray-800 shadow-lg transition-all duration-300 hover:-translate-y-3 hover:scale-105 hover:border-blue-400 hover:shadow-2xl group animate__animated animate__fadeInUp"
+                    style="animation-delay:0.2s;">
+                    <i class="fab fa-react text-4xl text-blue-400 mb-2 group-hover:animate-spin"></i>
+                    <h3 class="text-lg font-bold text-white mb-1 group-hover:text-blue-400 transition-colors">React.js
+                    </h3>
+                    <p class="text-gray-400 text-sm">Frontend Framework</p>
+                </div>
+                <div class="bg-gray-950 rounded-lg p-6 border border-gray-800 shadow-lg transition-all duration-300 hover:-translate-y-3 hover:scale-105 hover:border-green-400 hover:shadow-2xl group animate__animated animate__fadeInUp"
+                    style="animation-delay:0.3s;">
+                    <i class="fab fa-node-js text-4xl text-green-400 mb-2 group-hover:animate-bounce"></i>
+                    <h3 class="text-lg font-bold text-white mb-1 group-hover:text-green-400 transition-colors">Node.js
+                    </h3>
+                    <p class="text-gray-400 text-sm">Backend Runtime</p>
+                </div>
+                <div class="bg-gray-950 rounded-lg p-6 border border-gray-800 shadow-lg transition-all duration-300 hover:-translate-y-3 hover:scale-105 hover:border-blue-500 hover:shadow-2xl group animate__animated animate__fadeInUp"
+                    style="animation-delay:0.4s;">
+                    <i class="fab fa-python text-4xl text-blue-500 mb-2 group-hover:animate-bounce"></i>
+                    <h3 class="text-lg font-bold text-white mb-1 group-hover:text-blue-500 transition-colors">Python
+                    </h3>
+                    <p class="text-gray-400 text-sm">Scripting & Automation</p>
+                </div>
+                <div class="bg-gray-950 rounded-lg p-6 border border-gray-800 shadow-lg transition-all duration-300 hover:-translate-y-3 hover:scale-105 hover:border-orange-400 hover:shadow-2xl group animate__animated animate__fadeInUp"
+                    style="animation-delay:0.5s;">
+                    <i class="fab fa-html5 text-4xl text-orange-500 mb-2 group-hover:animate-bounce"></i>
+                    <h3 class="text-lg font-bold text-white mb-1 group-hover:text-orange-400 transition-colors">HTML5
+                    </h3>
+                    <p class="text-gray-400 text-sm">Markup Language</p>
+                </div>
+                <div class="bg-gray-950 rounded-lg p-6 border border-gray-800 shadow-lg transition-all duration-300 hover:-translate-y-3 hover:scale-105 hover:border-blue-500 hover:shadow-2xl group animate__animated animate__fadeInUp"
+                    style="animation-delay:0.6s;">
+                    <i class="fab fa-css3-alt text-4xl text-blue-500 mb-2 group-hover:animate-bounce"></i>
+                    <h3 class="text-lg font-bold text-white mb-1 group-hover:text-blue-500 transition-colors">CSS3</h3>
+                    <p class="text-gray-400 text-sm">Styling & Layout</p>
+                </div>
+                <div class="bg-gray-950 rounded-lg p-6 border border-gray-800 shadow-lg transition-all duration-300 hover:-translate-y-3 hover:scale-105 hover:border-purple-500 hover:shadow-2xl group animate__animated animate__fadeInUp"
+                    style="animation-delay:0.7s;">
+                    <i class="fab fa-bootstrap text-4xl text-purple-500 mb-2 group-hover:animate-bounce"></i>
+                    <h3 class="text-lg font-bold text-white mb-1 group-hover:text-purple-400 transition-colors">
+                        Bootstrap</h3>
+                    <p class="text-gray-400 text-sm">UI Framework</p>
+                </div>
+                <div class="bg-gray-950 rounded-lg p-6 border border-gray-800 shadow-lg transition-all duration-300 hover:-translate-y-3 hover:scale-105 hover:border-cyan-400 hover:shadow-2xl group animate__animated animate__fadeInUp"
+                    style="animation-delay:0.8s;">
+                    <i class="bx bxl-tailwind-css text-4xl" style="color: #38BDF8; margin-bottom: 0.5rem;"></i>
+                    <h3 class="text-lg font-bold text-white mb-1 group-hover:text-cyan-400 transition-colors">
+                        TailwindCSS</h3>
+                    <p class="text-gray-400 text-sm">Utility-first CSS</p>
+                </div>
+            </div>
+        </section>
+        <!-- skills section end -->
 
         <section id="cta" class="py-20 bg-dark border-y border-gray-800 relative overflow-hidden">
 
@@ -428,11 +492,10 @@
                     </p>
                 </div>
 
-                <!-- Rotating Circle with CTA -->
                 <div class="flex justify-center items-center">
                     <div class="relative w-80 h-80 lg:w-96 lg:h-96 flex items-center justify-center " data-aos="zoom-in"
                         data-aos-offset="200" data-aos-duration="2000">
-                        <!-- neon -->
+
                         <div class="absolute top-0 left-0 w-96 h-96 bg-purple-400/40 animate-pulse top-0 blur-3xl">
                         </div>
                         <div
@@ -486,45 +549,48 @@
             </div>
         </section>
 
-        <!-- Projects -->
+        <!-- Projects section start-->
         <section id="projects" class="py-20 bg-gray-900/50 relative overflow-hidden">
             <div class="max-w-6xl mx-auto dkslaoeyhnmj lg:px-12 relative z-10">
 
                 <div class="text-center mb-16">
-                    <h2 class="text-3xl lg:text-4xl font-bold font-code inline-block relative text-white mb-1">
+                    <h2
+                        class="text-3xl lg:text-4xl font-bold font-code inline-block relative text-white mb-1 animate__animated animate__fadeInDown animate__slower">
                         Latest <span class="text-green-400">Projects</span>
                         <div class="absolute -bottom-2 left-0 w-full h-1 bg-green-500 opacity-70"></div>
                     </h2>
-                    <p class="text-gray-400 mt-4 max-w-2xl mx-auto">
+                    <p class="text-gray-400 mt-4 max-w-2xl mx-auto animate__animated animate__fadeInUp animate__slower">
                         A collection of my recent work, showcasing innovative solutions and clean code. Click to explore
                         details.
                     </p>
                 </div>
 
-
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:paklemdnhatg gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
                     <!-- Project 1 -->
-                    <div
-                        class="bg-gray-950 rounded-lg overflow-hidden border border-gray-800 shadow-lg hover:shadow-xl transition-shadow transform hover:-translate-y-1 ">
-                        <a href="src/img/project1.jpg" class="">
-                            <img src="img/capital.png" alt="Taskify App" class="w-full h-48 object-cover">
+                    <div class="bg-gray-950 rounded-lg overflow-hidden border border-gray-800 shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 hover:scale-105 animate__animated "
+                        data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
+                        <a href="img/project1.jpg" class="group relative block">
+                            <img src="img/capital.png" alt="Taskify App"
+                                class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+                            <span
+                                class="absolute inset-0 bg-gradient-to-t from-green-400/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></span>
                         </a>
                         <div class="p-6">
-                            <h3 class="text-xl font-bold font-code text-white mb-2 flex items-center gap-2">
+                            <h3
+                                class="text-xl font-bold font-code text-white mb-2 flex items-center gap-2 animate__animated animate__fadeInLeft animate__slower">
                                 <i class="fas fa-tasks text-green-400 led-glow"></i> Taskify App
                             </h3>
-                            <p class="text-gray-300 mb-4">
+                            <p class="text-gray-300 mb-4 animate__animated animate__fadeIn animate__slower">
                                 A task management app with real-time collaboration, built using React, Node.js, and
                                 MongoDB.
                             </p>
-
-                            <div class="flex spoathnmkles">
+                            <div class="flex spoathnmkles gap-4">
                                 <a href="#" target="_blank"
-                                    class="text-gray-400 hover:text-green-400 transition-colors">
+                                    class="text-gray-400 hover:text-green-400 transition-colors animate__animated animate__fadeInUp animate__slower">
                                     <i class="fab fa-github text-xl"></i>
                                 </a>
                                 <a href="#" target="_blank"
-                                    class="text-gray-400 hover:text-green-400 transition-colors">
+                                    class="text-gray-400 hover:text-green-400 transition-colors animate__animated animate__fadeInUp animate__slower">
                                     <i class="fas fa-external-link-alt text-xl"></i>
                                 </a>
                             </div>
@@ -532,25 +598,29 @@
                     </div>
 
                     <!-- Project 2 -->
-                    <div
-                        class="bg-gray-950 rounded-lg overflow-hidden border border-gray-800 shadow-lg hover:shadow-xl transition-shadow transform hover:-translate-y-1 ">
-                        <a href="src/img/project2.jpg" class="">
-                            <img src="img/biznance.png" alt="E-Shop Platform" class="w-full h-48 object-cover">
+                    <div class="bg-gray-950 rounded-lg overflow-hidden border border-gray-800 shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 hover:scale-105 animate__animated "
+                        data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
+                        <a href="img/project2.jpg" class="group relative block">
+                            <img src="img/biznance.png" alt="Finance"
+                                class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+                            <span
+                                class="absolute inset-0 bg-gradient-to-t from-green-400/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></span>
                         </a>
                         <div class="p-6">
-                            <h3 class="text-xl font-bold font-code text-white mb-2 flex items-center gap-2">
-                                <i class="fas fa-shopping-cart text-green-400 led-glow"></i> E-Shop Platform
+                            <h3
+                                class="text-xl font-bold font-code text-white mb-2 flex items-center gap-2 animate__animated animate__fadeInLeft animate__slower">
+                                <i class="fas fa-shopping-cart text-green-400 led-glow"></i> Finance
                             </h3>
-                            <p class="text-gray-300 mb-4">
-                                A scalable e-commerce platform with Next.js, Stripe payments, and TailwindCSS.
+                            <p class="text-gray-300 mb-4 animate__animated animate__fadeIn animate__slower">
+                                A scalable e-commerce platform with HTML and Bootstrap.
                             </p>
-                            <div class="flex spoathnmkles">
+                            <div class="flex spoathnmkles gap-4">
                                 <a href="#" target="_blank"
-                                    class="text-gray-400 hover:text-green-400 transition-colors">
+                                    class="text-gray-400 hover:text-green-400 transition-colors animate__animated animate__fadeInUp animate__slower">
                                     <i class="fab fa-github text-xl"></i>
                                 </a>
-                                <a href="#" target="_blank"
-                                    class="text-gray-400 hover:text-green-400 transition-colors">
+                                <a href="https://biznance-min-width-ch8m.vercel.app" target="_blank"
+                                    class="text-gray-400 hover:text-green-400 transition-colors animate__animated animate__fadeInUp animate__slower">
                                     <i class="fas fa-external-link-alt text-xl"></i>
                                 </a>
                             </div>
@@ -558,39 +628,81 @@
                     </div>
 
                     <!-- Project 3 -->
-                    <div class="bg-gray-950 rounded-lg overflow-hidden border border-gray-800 shadow-lg hover:shadow-xl transition-shadow transform hover:-translate-y-1 "
-                        x-bind:class="visible ? ' animated fadeInUp delay300' : ''">
-                        <a href=" src/img/project3.jpg" class="">
-                            <img src="img/feane.png" alt="Portfolio Site" class="w-full h-48 object-cover">
+                    <div class="bg-gray-950 rounded-lg overflow-hidden border border-gray-800 shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 hover:scale-105 animate__animated "
+                        data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
+                        <a href="img/project3.jpg" class="group relative block">
+                            <img src="img/feane.png" alt="Portfolio Site"
+                                class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+                            <span
+                                class="absolute inset-0 bg-gradient-to-t from-green-400/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></span>
                         </a>
                         <div class="p-6">
-                            <h3 class="text-xl font-bold font-code text-white mb-2 flex items-center gap-2">
+                            <h3
+                                class="text-xl font-bold font-code text-white mb-2 flex items-center gap-2 animate__animated animate__fadeInLeft animate__slower">
                                 <i class="fas fa-user text-green-400 led-glow"></i> Portfolio Site
                             </h3>
-                            <p class="text-gray-300 mb-4">
+                            <p class="text-gray-300 mb-4 animate__animated animate__fadeIn animate__slower">
                                 My personal portfolio showcasing my work, built with HTML, TailwindCSS, and Alpine.js.
                             </p>
-                            <div class="flex spoathnmkles">
+                            <div class="flex spoathnmkles gap-4">
                                 <a href="#" target="_blank"
-                                    class="text-gray-400 hover:text-green-400 transition-colors">
+                                    class="text-gray-400 hover:text-green-400 transition-colors animate__animated animate__fadeInUp animate__slower">
                                     <i class="fab fa-github text-xl"></i>
                                 </a>
                                 <a href="#" target="_blank"
-                                    class="text-gray-400 hover:text-green-400 transition-colors">
+                                    class="text-gray-400 hover:text-green-400 transition-colors animate__animated animate__fadeInUp animate__slower">
+                                    <i class="fas fa-external-link-alt text-xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="bg-gray-950 rounded-lg overflow-hidden border border-gray-800 shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 hover:scale-105 animate__animated "
+                        data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
+                        <a href="img/portfolio.png" class="group relative block">
+                            <img src="img/portfolio.png" alt="Portfolio Site"
+                                class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+                            <span
+                                class="absolute inset-0 bg-gradient-to-t from-green-400/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                        </a>
+                        <div class="p-6">
+                            <h3
+                                class="text-xl font-bold font-code text-white mb-2 flex items-center gap-2 animate__animated animate__fadeInLeft animate__slower">
+                                <i class="fas fa-user text-green-400 led-glow"></i> Portfolio Site
+                            </h3>
+                            <p class="text-gray-300 mb-4 animate__animated animate__fadeIn animate__slower">
+                                My personal portfolio showcasing my work, built with HTML, TailwindCSS.
+                            </p>
+                            <div class="flex spoathnmkles gap-4">
+                                <a href="#" target="_blank"
+                                    class="text-gray-400 hover:text-green-400 transition-colors animate__animated animate__fadeInUp animate__slower">
+                                    <i class="fab fa-github text-xl"></i>
+                                </a>
+                                <a href="https://my-portfolio-xi-jet-x8hvio0kvt.vercel.app" target="_blank"
+                                    class="text-gray-400 hover:text-green-400 transition-colors animate__animated animate__fadeInUp animate__slower">
                                     <i class="fas fa-external-link-alt text-xl"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div
+                    class="absolute top-0 left-0 w-16 h-16 bg-green-400/10 rounded-lg animate__animated animate__fadeInDown animate__slower">
+                </div>
+                <div
+                    class="absolute bottom-0 right-0 w-24 h-24 bg-purple-400/10 rounded-lg animate__animated animate__fadeInUp animate__slower">
+                </div>
             </div>
         </section>
+        <!-- Projects section end-->
 
 
         <!-- Contact -->
         <section id="contact" class="py-16 bg-gray-900/50 relative overflow-hidden">
             <div class="max-w-6xl mx-auto dkslaoeyhnmj lg:px-12 relative z-10 relative">
-                <!-- Section Header -->
+
                 <div class="text-center mb-16">
                     <h2 class="text-3xl lg:text-4xl font-bold font-code inline-block relative text-white mb-1">
                         Get in <span class="text-green-400">Touch</span>
@@ -602,17 +714,18 @@
                     </p>
                 </div>
 
-                <!-- Contact Content -->
-                <div class="relative bg-gray-950 p-8 rounded-lg border border-gray-800 shadow-lg overflow-hidden ">
-                    <!-- table -->
+                <div class="relative bg-gray-950 p-8 rounded-lg border border-gray-800 shadow-lg overflow-hidden "
+                    data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+
                     <div
                         class="absolute -bottom-20 -right-20 size-56 bg-gray-800/20 border-2 border-gray-700 border-1 overflow-hidden">
-                        <!-- pattern -->
+
                         <div class="absolute inset-0 bg-hero opacity-[.03]"></div>
                     </div>
 
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 relative">
-                        <!-- Contact Form -->
+
                         <div x-data="contactForm()" class="relative">
                             <h3 class="text-xl font-bold font-code text-white mb-6 flex items-center gap-2">
                                 <i class="fas fa-envelope text-green-400 led-glow"></i> Send a Message
@@ -655,7 +768,7 @@
 
                         <!-- Contact Info & Social Links -->
                         <div class="space-y-8">
-                            <!-- Contact Info -->
+
                             <div class="relative">
                                 <h3 class="text-xl font-bold font-code text-white mb-6 flex items-center gap-2">
                                     Contact Info
@@ -678,7 +791,6 @@
                                 </ul>
                             </div>
 
-                            <!-- Social Links -->
                             <div class="relative">
                                 <h3 class="text-xl font-bold font-code text-white mb-6 flex items-center gap-2">
                                     Connect with Me
@@ -705,14 +817,16 @@
                         </div>
                     </div>
                     <!-- Coffee -->
-                    <div class="absolute bottom-10 right-10 w-12 h-16">
+                    <div class="absolute bottom-10 right-10 w-12 h-16" data-aos="fade-up"
+                        data-aos-anchor-placement="top-bottom" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                         <div class="absolute -right-4 top-6 h-8 w-8 border-4 border-gray-700 rounded-r-full"></div>
                         <div class="absolute bottom-0 w-full h-10 bg-gray-700 rounded-b-lg"></div>
                         <div class="absolute bottom-8 w-full h-8 bg-gray-600 rounded-lg">
                             <div class="absolute inset-1 rounded-lg bg-gradient-to-b from-amber-700 to-amber-900"></div>
                         </div>
                         <div class="absolute w-6 h-1 bg-white/20 border-1 left-3 top-3"></div>
-                        <!-- Steam Elements -->
+
                         <div class="absolute w-1.5 h-4 bg-white bg-opacity-30 border-1 left-4 -top-2 steam steam1">
                         </div>
                         <div class="absolute w-1.5 h-4 bg-white bg-opacity-30 border-1 left-6 -top-4 steam steam2">
@@ -726,14 +840,14 @@
         </section>
     </main>
 
-    <!-- footer -->
+    <!-- footer section start-->
     <footer class="bg-dark py-16 relative overflow-hidden">
-        <!-- pattern -->
+
         <div class="absolute inset-0 bg-hero opacity-[.03]"></div>
         <div class="max-w-6xl mx-auto dkslaoeyhnmj lg:px-12 relative z-10">
             <div class="grid grid-cols-4  gap-10 flex flex-row">
                 <div class="space-y-6 md:col-span-2">
-                    <h3 class="flex items-center gap-3">
+                    <h3 class="flex items-center gap-3" data-aos="zoom-in-right">
                         <i class="fas fa-code text-green-400 text-3xl led-glow"></i>
                         <span class="text-2xl font-bold text-white font-code">sanjay nakum</span>
                     </h3>
@@ -803,26 +917,39 @@
             </div>
         </div>
     </footer>
+    <!-- footer section end-->
 
     <!-- Back to Top Button -->
-    <button
-        class="fixed bottom-6 end-6 bg-gray-800 border border-green-600 font-bold size-10 flex items-center justify-center border-1  invisible transition-all duration-300 z-50"
-        style="display: none;" title="Back to Top">
-
+    <button id="Home"
+        class="fixed bottom-6 end-6 bg-gray-800 border border-green-600 font-bold size-10 flex items-center justify-center border-1 invisible transition-all duration-300 z-50"
+        style="display: none;">
+        <i class='bx bx-right-arrow-circle'></i>
     </button>
 
-    <!-- intersect -->
-    <script defer src="vendors/@alpinejs/intersect/dist/cdn.min.js"></script>
-    <!-- alpine js -->
-    <script src="vendors/alpinejs/dist/cdn.min.js" defer></script>
-    <!--  -->
-    <script src="vendors//dist/js/.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!--  aos animation  -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
         AOS.init();
     </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            setTimeout(function () {
+                const bars = document.querySelectorAll('.h-full.bg-gradient-to-r.from-green-400');
+                if (bars.length > 0) {
+                    bars[0].style.width = '90%'; // Frontend
+                    if (bars.length > 1) {
+                        bars[1].style.width = '60%'; // Backend
+                    }
+                }
+            }, 100);
+        });
+    </script>
+
 
     <script>
 
@@ -933,6 +1060,7 @@
                 const activeLink = Array.from(navLinks).find(link => link.getAttribute('href') === `#${targetId}`);
                 if (activeLink) activeLink.classList.add('active');
             };
+
             const checkCurrentSection = () => {
                 let current = '';
                 sections.forEach(section => {
