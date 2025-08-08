@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
@@ -53,8 +54,8 @@
                 </a>
             </div>
             <div class="md:hidden">
-                <button @click="open = !open" class="text-gray-300 hover:text-green-400 transition-colors">
-                    <i x-show="!open" class="fas fa-bars text-2xl"></i>
+                <button class="text-gray-300 hover:text-green-400 transition-colors">
+                    <i x-show="open" class="fas fa-bars text-2xl "></i>
                     <i x-show="open" class="fas fa-times text-2xl"></i>
                 </button>
                 <div x-show="open" style="display:none;" x-transition:enter="transition ease-out duration-300"
@@ -86,24 +87,31 @@
                     <div class="w-full text-center space-y-6 xl:pt-8" x-intersect:enter="isHeaderVisible = true"
                         x-intersect:leave="isHeaderVisible = false">
                         <div class="space-y-2">
-                            <h2 class="text-green-500 text-xl md:text-2xl font-semibold">Hello World! I'm</h2>
-                            <h1 class="text-4xl lg:text-6xl font-bold font-code tracking-tight text-white ">
+                            <h2 class="text-green-500 text-xl md:text-2xl font-semibold" data-aos="fade-up"
+                                data-aos-anchor-placement="top-bottom" data-aos-offset="200" data-aos-duration="2000">
+                                Hello World! I'm</h2>
+                            <h1 class="text-4xl lg:text-6xl font-bold font-code tracking-tight text-white "
+                                data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="200"
+                                data-aos-duration="2000">
                                 sanjay nakum
                             </h1>
                         </div>
 
-                        <p class="text-lg text-gray-300 max-w-xl mx-auto leading-relaxed ">
+                        <p class="text-lg text-gray-300 max-w-xl mx-auto leading-relaxed " data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom" data-aos-offset="300" data-aos-duration="3000">
                             I'm Full Stack Developer eager to kickstart my career in web development. With a strong
                             foundation in both front-end and back-end technologies, I’m ready to bring fresh ideas and
                             enthusiasm to any project.
                         </p>
 
                         <div class="flex flex-wrap justify-center spoathnmkles py-2 gap-10">
-                            <a href="#projects"
+                            <a href="#projects" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                                data-aos-offset="200" data-aos-duration="2000"
                                 class="maksueyropls py-3 bg-green-500 hover:bg-green-600 text-gray-900 font-bold rounded-lg transition-all flex items-center gap-2 px-3">
                                 <i class="fas fa-code"></i> View Projects
                             </a>
-                            <a href="#contact"
+                            <a href="#contact" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                                data-aos-offset="100" data-aos-duration="2000"
                                 class="maksueyropls py-3 bg-transparent hover:bg-gray-800 text-green-400 border border-green-400 font-bold rounded-lg transition-all flex items-center gap-2 px-3">
                                 <i class="fas fa-envelope"></i> Contact Me
                             </a>
@@ -152,7 +160,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="absolute bottom-2 right-8 w-2/5 aspect-video ">
+                            <div class="absolute bottom-2 right-8 w-2/5 aspect-video " data-aos="fade-left"
+                                data-aos-offset="200" data-aos-duration="2000">
                                 <div class="absolute bottom-2 sm:bottom-7 w-full h-4 bg-gray-700 right-0 rounded-b-lg">
                                 </div>
                                 <div
@@ -215,7 +224,9 @@
                             </div>
 
                             <!-- Coffee Cup -->
-                            <div class="absolute -bottom-4 md:-bottom-2 left-10 w-12 h-16 " x-data="{ visible: false }">
+                            <div class="absolute -bottom-4 md:-bottom-2 left-10 w-12 h-16 " x-data="{ visible: false }"
+                                data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="200"
+                                data-aos-duration="2000">
                                 <div class="absolute -right-4 top-6 h-8 w-8 border-4 border-gray-700 rounded-r-full">
                                 </div>
                                 <div class="absolute bottom-0 w-full h-10 bg-gray-700 rounded-b-lg"></div>
@@ -274,8 +285,8 @@
                         style="color: #38BDF8;"></i>
                     JQuery
                 </div>
-                <div class="flex items-center gap-2 text-gray-400"><i
-                        class="fab fa-css3-alt text-2xl text-blue-500"></i>
+                <div class="flex items-center gap-2 text-gray-400"><i class='bx bxl-c-plus-plus'
+                        style="color: #38BDF8;"></i>
                     C++
                 </div>
                 <div class="flex items-center gap-2 text-gray-400"><i
@@ -419,7 +430,8 @@
 
                 <!-- Rotating Circle with CTA -->
                 <div class="flex justify-center items-center">
-                    <div class="relative w-80 h-80 lg:w-96 lg:h-96 flex items-center justify-center ">
+                    <div class="relative w-80 h-80 lg:w-96 lg:h-96 flex items-center justify-center " data-aos="zoom-in"
+                        data-aos-offset="200" data-aos-duration="2000">
                         <!-- neon -->
                         <div class="absolute top-0 left-0 w-96 h-96 bg-purple-400/40 animate-pulse top-0 blur-3xl">
                         </div>
@@ -805,6 +817,12 @@
     <script src="vendors/alpinejs/dist/cdn.min.js" defer></script>
     <!--  -->
     <script src="vendors//dist/js/.min.js"></script>
+    <!--  aos animation  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 
     <script>
 
