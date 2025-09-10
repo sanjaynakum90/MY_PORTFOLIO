@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevPro - Developer Portfolio Template</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body class="bg-gray-950 text-gray-100 font-sans">
+    <header class="sticky top-0 z-50 bg-gray-950/95 backdrop-blur-sm border-b border-gray-800">
+        <nav class="max-w-6xl mx-auto px-6 lg:px-12 py-6 flex items-center place-content-between ">
+            <a href="index.html" class="flex items-center gap-3">
+                <i class="fas fa-code text-green-400 text-2xl led-glow"></i>
+                <span class="text-xl font-bold text-white font-code">sanjay nakum</span>
+            </a>
+            <div class="hidden md:flex items-center gap-10">
+                <a href="./index.html"
+                    class="nav-link text-gray-300 hover:text-green-400 [&.active]:text-green-400 [&.active>span]:w-full transition-colors font-medium relative group">
+                    Home
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-400 transition-all group-hover:w-full"></span>
+                </a>
+                <a href="./about.html"
+                    class="nav-link text-gray-300 hover:text-green-400 [&.active]:text-green-400 [&.active>span]:w-full transition-colors font-medium relative group">
+                    About
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-400 transition-all group-hover:w-full"></span>
+                </a>
+                <a href="#skill"
+                    class="nav-link text-gray-300 hover:text-green-400 [&.active]:text-green-400 [&.active>span]:w-full transition-colors font-medium relative group">
+                    Skills
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-400 transition-all group-hover:w-full"></span>
+                </a>
+                <a href="./project.html"
+                    class="nav-link text-gray-300 hover:text-green-400 [active]:text-green-400 [&.active>span]:w-full transition-colors font-medium relative group">
+                    Projects
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-400 transition-all group-hover:w-full"></span>
+                </a>
+                <a href="./contact.html"
+                    class="nav-link text-gray-300 hover:text-green-400 [&.active]:text-green-400 [&.active>span]:w-full transition-colors font-medium relative group">
+                    Contact
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-400 transition-all group-hover:w-full"></span>
+                </a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-toggle" class="text-gray-300 hover:text-green-400 transition-colors">
+                    <i id="menu-bars" class="fas fa-bars text-2xl"></i>
+                    <i id="menu-times" class="fas fa-times text-2xl" style="display:none;"></i>
+                </button>
+                <div id="mobile-menu" style="display:none;"
+                    class="absolute top-full left-0 right-0 bg-gray-950 border-b border-gray-800 p-6 flex flex-col shadow-lg">
+                    <a href="./index.html"
+                        class="nav-link text-gray-300 hover:text-green-400 [&.active]:text-green-400 transition-colors font-medium relative group">
+                        Home
+                        <span
+                            class="absolute left-0 -bottom-1 w-0 h-0.5 bg-green-400 transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="./about.html"
+                        class="nav-link text-gray-300 hover:text-green-400 [&.active]:text-green-400 transition-colors font-medium relative group">
+                        About
+                        <span
+                            class="absolute left-0 -bottom-1 w-0 h-0.5 bg-green-400 transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="./project.html"
+                        class="nav-link text-gray-300 hover:text-green-400 [&.active]:text-green-400 transition-colors font-medium relative group">
+                        Projects
+                        <span
+                            class="absolute left-0 -bottom-1 w-0 h-0.5 bg-green-400 transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="./contact.html"
+                        class="nav-link text-gray-300 hover:text-green-400 [&.active]:text-green-400 transition-colors font-medium relative group">
+                        Contact
+                        <span
+                            class="absolute left-0 -bottom-1 w-0 h-0.5 bg-green-400 transition-all group-hover:w-full"></span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="relative min-h-screen bg-gray-900/50 overflow-hidden">
+
+        <section class="relative py-16 px-6 lg:px-12 max-w-6xl mx-auto z-10">
+
+            <div class="bg-gray-950 rounded-lg border border-gray-800 shadow-2xl overflow-hidden ">
+
+                <div class="bg-gray-800 p-4 flex items-center gap-2">
+                    <div class="flex gap-1">
+                        <div class="w-3 h-3 bg-red-500 radius"></div>
+                        <div class="w-3 h-3 bg-yellow-500 radius"></div>
+                        <div class="w-3 h-3 bg-green-500 radius"></div>
+                    </div>
+                    <div class="text-xs text-gray-400 font-code ms-auto"><span class="text-green-400">./</span>about
+                    </div>
+                </div>
+
+
+                <div class="p-8 grid grid-cols-3 gap-12">
+
+                    <div class="lg:col-span-1 bg-gray-950/50 p-6 rounded-lg border border-gray-800">
+                        <div class="text-center mb-6 ">
+                            <div class="w-24 h-24 radius mx-auto overflow-hidden mb-4">
+                                <img src="./img/sanjay.jpg" alt="John Peterson" class="w-full h-full object-cover">
+                            </div>
+                            <h2 class="text-2xl font-bold font-code text-white">Sanjay Nakum</h2>
+                            <p class="text-green-400 text-lg">Full-Stack Developer</p>
+
+                        </div>
+                        <div class="space-y-4 ">
+                            <div class="flex items-center  gap-3">
+                                <i class="fas fa-envelope text-green-400 led-glow"></i>
+                                <a href="sanjaynakum4545@gmail.com"
+                                    class="text-gray-300 hover:text-green-400">sanjaynakum4545@gmail.com</a>
+                            </div>
+                            <div class="flex items-center  gap-3">
+                                <i class="fas fa-map-marker-alt text-green-400 led-glow"></i>
+                                <span>Bhavnagar,Gujrat</span>
+                            </div>
+                            <div class="flex gap-4 place-content-center">
+                                <a href="https://github.com/" target="_blank"
+                                    class="text-gray-300 hover:text-green-400 text-xl transition-transform hover:scale-110">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://linkedin.com/in/" target="_blank"
+                                    class="text-gray-300 hover:text-green-400 text-xl transition-transform hover:scale-110">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-2 space-y-6">
+                        <h3 class="text-3xl font-bold font-code text-white mb-4 ">
+                            About Sanjay Nakum
+                        </h3>
+                        <p class="text-gray-300 leading-relaxed ">
+                            I’m passionate about learning new technologies and solving real-world problems through code.
+                            Let’s create something amazing together! add_elementsquare_element.
+                        </p>
+                        <p class="text-gray-300 leading-relaxed ">
+                            I use tools like HTML, CSS, JavaScript, React.js for the front-end, and Node.js, Express,
+                            and MongoDB for the back-end. My goal is to build websites that are not only functional but
+                            also user-friendly and visually appealing.
+                        </p>
+                        <div class="mt-6 flex flex-wrap gap-2">
+                            <span
+                                class="px-3 py-1 bg-yellow-400 text-gray-900 border-1 text-sm rounded transition-all duration-300 hover:scale-110 hover:bg-yellow-500 hover:shadow-lg hover:animate-bounce">JavaScript</span>
+                            <span
+                                class="px-3 py-1 bg-blue-400 text-gray-900 border-1 text-sm rounded transition-all duration-300 hover:scale-110 hover:bg-blue-500 hover:shadow-lg hover:animate-bounce">C++</span>
+                            <span
+                                class="px-3 py-1 bg-orange-400 text-gray-900 border-1 text-sm rounded transition-all duration-300 hover:scale-110 hover:bg-orange-500 hover:shadow-lg hover:animate-bounce">HTML</span>
+                            <span
+                                class="px-3 py-1 bg-purple-400 text-gray-900 border-1 text-sm rounded transition-all duration-300 hover:scale-110 hover:bg-purple-500 hover:shadow-lg hover:animate-bounce">Bootstrap</span>
+                            <span
+                                class="px-3 py-1 bg-blue-400 text-gray-900 border-1 text-sm rounded transition-all duration-300 hover:scale-110 hover:bg-blue-600 hover:shadow-lg hover:animate-bounce">TypeScript</span>
+                            <span
+                                class="px-3 py-1 bg-cyan-400 text-gray-900 border-1 text-sm rounded transition-all duration-300 hover:scale-110 hover:bg-blue-400 hover:shadow-lg hover:animate-bounce">TailwindCSS</span>
+                            <span
+                                class="px-3 py-1 bg-green-400 text-gray-900 border-1 text-sm rounded transition-all duration-300 hover:scale-110 hover:bg-green-500 hover:shadow-lg hover:animate-bounce">Python</span>
+                            <span
+                                class="px-3 py-1 bg-gray-400 text-gray-900 border-1 text-sm rounded transition-all duration-300 hover:scale-110 hover:bg-gray-500 hover:shadow-lg hover:animate-bounce">Git</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="absolute bottom-10 right-5 w-12 h-16 ">
+                <div class="absolute -right-4 top-6 h-8 w-8 border-4 border-gray-700 rounded-r-full"></div>
+                <div class="absolute bottom-0 w-full h-10 bg-gray-700 rounded-b-lg"></div>
+                <div class="absolute bottom-8 w-full h-8 bg-gray-600 rounded-lg">
+                    <div class="absolute inset-1 rounded-lg bg-gradient-to-b from-amber-700 to-amber-900"></div>
+                </div>
+                <div class="absolute w-6 h-1 bg-white/20 radius left-3 top-3"></div>
+                <div class="absolute w-1.5 h-4 bg-white bg-opacity-30 radius left-4 -top-2 steam steam1"></div>
+                <div class="absolute w-1.5 h-4 bg-white bg-opacity-30 radius left-6 -top-4 steam steam2"></div>
+                <div class="absolute w-1.5 h-4 bg-white bg-opacity-30 radius left-8 -top-3 steam steam3"></div>
+                <div class="absolute left-2 bottom-3 text-[8px] tracking-widest">COFFEE</div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- footer -->
+    <footer class="bg-dark py-16 relative overflow-hidden">
+
+        <div class="absolute inset-0 bg-hero opacity-[.03]"></div>
+        <div class="max-w-6xl mx-auto px-6 lg:px-12 md:px-12 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 flex flex-col lg:flex-row">
+                <div class="space-y-6 md:col-span-2">
+                    <h3 class="flex items-center gap-3" data-aos="zoom-in-right">
+                        <i class="fas fa-code text-green-400 text-3xl led-glow"></i>
+                        <span class="text-2xl font-bold text-white font-code">sanjay nakum</span>
+                    </h3>
+                    <p class="text-gray-300 leading-relaxed pe-0 lg:pe-16">
+                        Building the future with clean code, creativity, and a passion for innovation.
+                    </p>
+                    <div class="flex gap-5 flex-wrap">
+                        <a href="#"
+                            class="text-gray-300 hover:text-green-400 text-xl transition-colors transform hover:scale-110">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#"
+                            class="text-gray-300 hover:text-green-400 text-xl transition-colors transform hover:scale-110">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#"
+                            class="text-gray-300 hover:text-green-400 text-xl transition-colors transform hover:scale-110">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#"
+                            class="text-gray-300 hover:text-green-400 text-xl transition-colors transform hover:scale-110">
+                            <i class="fab fa-dev"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-10 md:mt-0">
+                    <h3 class="text-xl font-bold font-code text-white mb-6 flex items-center gap-2">
+                        <i class="fas fa-link text-green-400"></i> Quick Links
+                    </h3>
+                    <ul class="space-y-3">
+                        <li><a href="./about.html"
+                                class="text-gray-300 hover:text-green-400 transition-colors flex items-center gap-2"><i
+                                    class="fas fa-user text-sm"></i> About</a>
+                        </li>
+                        <li><a href="./project.html"
+                                class="text-gray-300 hover:text-green-400 transition-colors flex items-center gap-2"><i
+                                    class="fas fa-code text-sm"></i> Projects</a>
+                        </li>
+                        <li><a href="./contact.html"
+                                class="text-gray-300 hover:text-green-400 transition-colors flex items-center gap-2"><i
+                                    class="fas fa-envelope text-sm"></i> Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-10 md:mt-0">
+                    <h3 class="text-xl font-bold font-code text-white mb-6 flex items-center gap-2">
+                        <i class="fas fa-envelope text-green-400"></i> Newsletter
+                    </h3>
+                    <p class="text-gray-300 mb-4">Stay updated with my latest projects and tech insights.</p>
+                    <form class="space-y-3">
+                        <input type="email" placeholder="Enter your email"
+                            class="w-full py-3 px-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-300 focus:outline-none focus:border-green-400 transition-colors">
+                        <button type="submit"
+                            class="w-full py-3 px-2 bg-green-500 text-gray-900 font-bold rounded-lg hover:bg-green-600 transition-colors flex items-center justify-center gap-2">
+                            <i class="fas fa-paper-plane"></i> Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div
+                class="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row flex-wrap justify-between items-center gap-4">
+                <p class="text-gray-300 text-sm text-center md:text-left">
+                    <i class="fa-regular fa-copyright"></i>
+                    <script>document.write(new Date().getFullYear());</script> sanjay nakum. Crafted with <i
+                        class="fas fa-heart text-green-400"></i> and <i class="fas fa-coffee text-green-400"></i>.
+                </p>
+                <div class="text-gray-300 text-sm flex gap-4">
+                    <a href="privacy.html" class="hover:text-green-400 transition-colors">Privacy Policy</a>
+                    <a href="terms.html" class="hover:text-green-400 transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top"
+        class="fixed bottom-6 right-6 bg-gray-800 border border-green-600 font-bold size-10 flex items-center justify-center border-1 transition-all duration-300 z-50 opacity-1 invisible"
+        style="opacity: 0; visibility: hidden;">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./script.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
