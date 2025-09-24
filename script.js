@@ -60,11 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', () => {
     // Typing effect
     const texts = {
-        1: 'DevOS v4.2.0',
-        2: 'ThinkPad X1 Carbon',
-        3: '5.15.0-dev',
-        4: '45 days, 17 hours',
-        5: 'JavaScript, Python, Go',
+        5: 'JavaScript,',
         6: 'VSCode',
         7: 'TailwindCSS'
     };
